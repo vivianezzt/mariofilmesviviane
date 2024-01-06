@@ -1,0 +1,91 @@
+$background-color_1: var(--red);
+$background-color_2: var(--green);
+
+/* Adicione esta regra de mídia para dispositivos com largura máxima de 600px */
+main {
+	flex: 1;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	max-width: 1440px;
+}
+.main__info {
+	width: 100%;
+	max-width: 570px;
+	p {
+		font-size: 18px;
+		margin: 20px;
+	}
+	div {
+		display: flex;
+		column-gap: 32px;
+		a {
+			width: 100%;
+			padding: 10px 0;
+			border-radius: 3px;
+			border-radius: 3px;
+			font-size: 16px;
+			font-weight: 600;
+			text-align: center;
+			text-transform: uppercase;
+			letter-spacing: 0.3px;
+			transform: skew(-10deg);
+			background-color: $background-color_1;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+		button {
+			width: 100%;
+			padding: 10px 0;
+			border-radius: 3px;
+			border-radius: 3px;
+			font-size: 16px;
+			font-weight: 600;
+			text-align: center;
+			text-transform: uppercase;
+			letter-spacing: 0.3px;
+			transform: skew(-10deg);
+			background-color: $background-color_2;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+	}
+}
+@media only screen and (max-width: 600px) {
+	header {
+		flex-direction: column;
+		text-align: center;
+		column-gap: 0;
+		padding: 16px;
+	}
+	.navigation {
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		margin-top: 16px;
+	}
+	.navigation__link {
+		margin-bottom: 10px;
+	}
+	.navigation__social {
+		margin: 16px 0;
+	}
+	main {
+		flex-direction: column;
+		align-items: center;
+	}
+	.main__info {
+		max-width: 100%;
+		p {
+			margin: 10px;
+		}
+		div {
+			flex-direction: column;
+			align-items: center;
+			column-gap: 10px;
+		}
+	}
+}

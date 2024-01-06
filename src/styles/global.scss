@@ -1,0 +1,40 @@
+$color_1: var(--text);
+
+@import "./background.css";
+@import "./header.css";
+@import "./main.css";
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+:root {
+	--text: #EDF1F7;
+	--red: #C51212;
+	--blue: #0041C2;
+	--green: #14B02D;
+	--yellow: #FFC12B;
+}
+body {
+	color: $color_1;
+	font: 400 1rem "Mukta", sans-serif;
+}
+button {
+	color: $color_1;
+	font: 400 1rem "Mukta", sans-serif;
+	&:hover {
+		cursor: pointer;
+	}
+}
+a {
+	color: $color_1;
+	font: 400 1rem "Mukta", sans-serif;
+	text-decoration: none;
+}
+#app {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	height: 100vh;
+}
